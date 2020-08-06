@@ -14,25 +14,25 @@ module.exports = plop => {
 			{
 				type: 'input',
 				name: 'route',
-				message: 'What is the route to your component?',
+				message: 'What is the route to your component? Eg: pages/example',
 			},
 		],
 		actions: [
 			{
 				type: 'add',
-				path: 'src/pages/{{pascalCase route}}/{{pascalCase name}}.tsx',
+				path: 'src/{{route}}/{{pascalCase name}}/{{pascalCase name}}.tsx',
 				templateFile: 'plop-templates/Component.tsx.hbs',
 			},
 			{
 				type: 'add',
-				path: 'src/styles/pages{{pascalCase route}}/{{pascalCase name}}.scss',
+				path: 'src/{{route}}/{{pascalCase name}}/{{pascalCase name}}.scss',
 			},
 			{
 				// Action type 'append' injects a template into an existing file
 				type: 'append',
 				path: 'src/styles/index.scss',
 				pattern: `/* PLOP_COMPONENTS_IMPORT */`,
-				template: `@import './pages{{pascalCase route}}/{{pascalCase name}}.scss';`,
+				template: `@use './{{route}}/{{pascalCase name}}/{{pascalCase name}}.scss';`,
 			},
 		],
 	})
