@@ -16,6 +16,12 @@ import Tab1 from './pages/Tab1'
 import Tab2 from './pages/Tab2'
 import Tab3 from './pages/Tab3'
 import {hot} from 'react-hot-loader/root'
+
+//sanitize.css is a CSS library that provides consistent, cross-browser default styling of HTML elements alongside useful defaults.
+import 'sanitize.css'
+import 'sanitize.css/forms.css'
+import 'sanitize.css/typography.css'
+
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css'
 
