@@ -15,12 +15,8 @@ import {ellipse, square, triangle} from 'ionicons/icons'
 import Tab1 from './pages/Tab1'
 import Tab2 from './pages/Tab2'
 import Tab3 from './pages/Tab3'
+import DesignSystem from './pages/DesignSystem/DesignSystem'
 import {hot} from 'react-hot-loader/root'
-
-//sanitize.css is a CSS library that provides consistent, cross-browser default styling of HTML elements alongside useful defaults.
-import 'sanitize.css'
-import 'sanitize.css/forms.css'
-import 'sanitize.css/typography.css'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css'
@@ -28,7 +24,6 @@ import '@ionic/react/css/core.css'
 /* Basic CSS for apps built with Ionic */
 import '@ionic/react/css/normalize.css'
 import '@ionic/react/css/structure.css'
-import '@ionic/react/css/typography.css'
 
 /* Optional CSS utils that can be commented out */
 import '@ionic/react/css/padding.css'
@@ -39,7 +34,7 @@ import '@ionic/react/css/flex-utils.css'
 import '@ionic/react/css/display.css'
 
 /* Theme variables */
-import './theme/variables.css'
+import './theme/variables.scss'
 
 /* SASS */
 import './styles/index.scss'
@@ -52,6 +47,7 @@ const App: React.FC = () => (
 					<Route path="/tab1" component={Tab1} exact={true} />
 					<Route path="/tab2" component={Tab2} exact={true} />
 					<Route path="/tab3" component={Tab3} />
+					<Route path="/design" component={DesignSystem} />
 					<Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
 				</IonRouterOutlet>
 				<IonTabBar slot="bottom">

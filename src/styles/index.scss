@@ -1,6 +1,5 @@
-@use './base/reset.scss';
-@use './base/typography.scss';
+@import './vendors/ionic';
+@import './base/typography.scss';
 
 /* PLOP_COMPONENTS_IMPORT */
-@use './pages/Test/Test.scss';
-@use './pages/Home/Home.scss';
+@import '../pages/DesignSystem/DesignSystem.scss';

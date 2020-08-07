@@ -32,7 +32,7 @@ module.exports = plop => {
 				type: 'append',
 				path: 'src/styles/index.scss',
 				pattern: `/* PLOP_COMPONENTS_IMPORT */`,
-				template: `@use './{{route}}/{{pascalCase name}}/{{pascalCase name}}.scss';`,
+				template: `@import '../{{route}}/{{pascalCase name}}/{{pascalCase name}}.scss';`,
 			},
 		],
 	})

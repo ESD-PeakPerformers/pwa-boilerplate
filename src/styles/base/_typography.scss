@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+//Tab headers, Section headers, Price, Quantitative data
+h1 {
+	font-size: 1.25rem;
+	font-weight: 500;
+	color: var(--ion-color-secondary-shade);
+}
+
+//Headings (actions), Headings (information)
+h2 {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+// Captions (information)
+h3 {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+// Body (information)
+p {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+//Captions (actions)
+small {
+	font-size: 0.875rem;
+	font-weight: 400;
+}

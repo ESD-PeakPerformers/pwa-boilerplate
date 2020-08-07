@@ -1,0 +1,13 @@
+//Button
+.button {
+	--border-radius: 15px;
+	--box-shadow: none;
+	text-transform: none;
+}
+.button-large {
+	height: 45px;
+	font-size: 1rem;
+}
+.button-small {
+	height: 30px;
+}
