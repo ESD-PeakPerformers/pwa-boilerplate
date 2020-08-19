@@ -1,0 +1,16 @@
+.CustomSelect {
+	border: 1px solid #003b35;
+	border-radius: 15px;
+}
+
+.Select-Outline {
+	border: 1px solid #b93d00;
+	--background: rgba(185, 61, 0, 0.15);
+	--background-activated: rgba(185, 61, 0, 0.3);
+	ion-icon {
+		color: #b93d00;
+	}
+	ion-select::part(text) {
+		color: #b93d00;
+	}
+}

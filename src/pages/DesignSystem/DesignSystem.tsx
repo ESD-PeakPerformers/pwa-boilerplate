@@ -5,6 +5,7 @@ import {
 	arrowForwardOutline,
 	closeOutline,
 } from 'ionicons/icons'
+import Select from '../../components/Select/Select'
 
 const DesignSystem: React.FC = () => {
 	return (
@@ -41,6 +42,11 @@ const DesignSystem: React.FC = () => {
 				<h3>Caption information</h3>
 				<p>Body information</p>
 				<small>Body small text</small>
+			</div>
+			<div>
+				<h1>Select</h1>
+				<hr />
+				<Select type="outline" />
 			</div>
 		</div>
 	)

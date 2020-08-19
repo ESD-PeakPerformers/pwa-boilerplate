@@ -11,3 +11,10 @@
 .button-small {
 	height: 30px;
 }
+
+//Select
+ion-select {
+	&::part(icon) {
+		display: none;
+	}
+}
